@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friend Finder</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+		<div class="jumbotron">
+			<h1 class='text-center'><span class="glyphicon glyphicon-user"></span> Friend Finder</h1>
+			<h3 class='text-center'>Answer a few basic questions.<br>Then find the friend with the greatest compatibility!</h3>
+			<hr>
+			<div class='text-center'>
+			<button type="button" class="btn btn-primary btn-lg" id='survey'><span class="glyphicon glyphicon-list"></span> Go to Survey</button>
+			</div>
+		</div>
+
+<a href='api/friends'>API Friends link</a> |
+<a href='https://github.com/stellawu734/FriendFinder'>Github Repo</a> 
+<script>
+	$('#survey').on('click',function(){
+		location.href = "/survey";
+	});
+</script>
+</body>
+</html>

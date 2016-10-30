@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<div class="page-header">
+  <h1>Survey Questions</h1>
+</div>
+</head>
+
+<body>
+<div class= 'container'>
+<h3>About You</h3>
+<h5>Name (Required)</h5>
+<input type='text' id='userName' class='col-lg-12'>
+<br>
+<h5>Link to Photo Image (Required)</h5>
+<input type='text' id='photo' class='col-lg-12'>
+<br>
+<hr>
+
+	<h3>Question 1</h3> 
+	<h5>In a relationship, how often do you like to discuss politics with your partner?</h5>
+	<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle col-lg-4" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span class="caret" id='q1'></span>
+  </button>
+  <ul class="dropdown-menu col-lg-4" aria-labelledby="dropdownMenu1">
+    <li data='1' data-src='1'><a href="javascript:void(0)">1(never)</a></li>
+    <li data='2' data-src='1'><a href="javascript:void(0)">2</a></li>
+    <li data='3' data-src='1'><a href="javascript:void(0)">3</a></li>
+    <li data='4' data-src='1'><a href="javascript:void(0)">4</a></li>
+    <li data='5' data-src='1'><a href="javascript:void(0)">5(always)</a></li>
+  </ul>
+</div>
+<br>
+
+	<h3>Question 2</h3> 
+	<h5>How important is it for you to make physical contact when showing affetion for your partner?</h5>
+	<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle col-lg-4" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span class="caret" id='q2'></span>
+  </button>
+  <ul class="dropdown-menu col-lg-4" aria-labelledby="dropdownMenu1">
+    <li data='1' data-src='2'><a href="javascript:void(0)">1(not important)</a></li>
+    <li data='2' data-src='2'><a href="javascript:void(0)">2</a></li>
+    <li data='3' data-src='2'><a href="javascript:void(0)">3</a></li>
+    <li data='4' data-src='2'><a href="javascript:void(0)">4</a></li>
+    <li data='5' data-src='2'><a href="javascript:void(0)">5(very important)</a></li>
+  </ul>
+</div>	
+<br>
+
+	<h3>Question 3</h3> 
+	<h5>How much do you like to cuddule?</h5>
+	<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle col-lg-4" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span class="caret" id='q3'></span>
+  </button>
+  <ul class="dropdown-menu col-lg-4" aria-labelledby="dropdownMenu1">
+    <li data='1' data-src='3'><a href="javascript:void(0)">1(hate it)</a></li>
+    <li data='2' data-src='3'><a href="javascript:void(0)">2</a></li>
+    <li data='3' data-src='3'><a href="javascript:void(0)">3</a></li>
+    <li data='4' data-src='3'><a href="javascript:void(0)">4</a></li>
+    <li data='5' data-src='3'><a href="javascript:void(0)">5(cannot live without it)</a></li>
+  </ul>
+</div>	
+<br>
+
+	<h3>Question 4</h3> 
+	<h5>How religious are you?</h5>
+	<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle col-lg-4" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span class="caret" id='q4'></span>
+  </button>
+  <ul class="dropdown-menu col-lg-4" aria-labelledby="dropdownMenu1">
+    <li data='1' data-src='4'><a href="javascript:void(0)">1(Atheist)</a></li>
+    <li data='2' data-src='4'><a href="javascript:void(0)">2</a></li>
+    <li data='3' data-src='4'><a href="javascript:void(0)">3</a></li>
+    <li data='4' data-src='4'><a href="javascript:void(0)">4</a></li>
+    <li data='5' data-src='4'><a href="javascript:void(0)">5(very religious)</a></li>
+  </ul>
+</div>
+<br>
+
+	<h3>Question 5</h3> 
+	<h5>How much do you want kinds now?</h5>
+	<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle col-lg-4" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span class="caret" id='q5'></span>
+  </button>
+  <ul class="dropdown-menu col-lg-4" aria-labelledby="dropdownMenu1">
+    <li data='1' data-src='5'><a href="javascript:void(0)">1(not at all)</a></li>
+    <li data='2' data-src='5'><a href="javascript:void(0)">2</a></li>
+    <li data='3' data-src='5'><a href="javascript:void(0)">3</a></li>
+    <li data='4' data-src='5'><a href="javascript:void(0)">4</a></li>
+    <li data='5' data-src='5'><a href="javascript:void(0)">5(very much)</a></li>
+  </ul>
+</div>	
+<br>
+
+	<h3>Question 6</h3> 
+	<h5>How important is it to you that your partner smell good?</h5>
+	<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle col-lg-4" type="button" id="dropdownMenu6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span class="caret" id='q6'></span>
+  </button>
+  <ul class="dropdown-menu col-lg-4" aria-labelledby="dropdownMenu1">
+    <li data='1' data-src='6'><a href="javascript:void(0)">1(do not care at all)</a></li>
+    <li data='2' data-src='6'><a href="javascript:void(0)">2</a></li>
+    <li data='3' data-src='6'><a href="javascript:void(0)">3</a></li>
+    <li data='4' data-src='6'><a href="javascript:void(0)">4</a></li>
+    <li data='5' data-src='6'><a href="javascript:void(0)">5(very damn important)</a></li>
+  </ul>
+</div>
+<br>
+
+	<h3>Question 7</h3> 
+	<h5>Do you ever feel the need to get really drunk?</h5>
+	<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle col-lg-4" type="button" id="dropdownMenu7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span class="caret" id='q7'></span>
+  </button>
+  <ul class="dropdown-menu col-lg-4" aria-labelledby="dropdownMenu1">
+    <li data='1' data-src='7'><a href="javascript:void(0)">1(Never)</a></li>
+    <li data='2' data-src='7'><a href="javascript:void(0)">2</a></li>
+    <li data='3' data-src='7'><a href="javascript:void(0)">3</a></li>
+    <li data='4' data-src='7'><a href="javascript:void(0)">4</a></li>
+    <li data='5' data-src='7'><a href="javascript:void(0)">5(very day)</a></li>
+  </ul>
+</div>	
+<br>
+
+	<h3>Question 8</h3> 
+	<h5>How often are you oepn with your feelings?</h5>
+	<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle col-lg-4" type="button" id="dropdownMenu8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span class="caret" id='q8'></span>
+  </button>
+  <ul class="dropdown-menu col-lg-4" aria-labelledby="dropdownMenu1">
+    <li data='1' data-src='8'><a href="javascript:void(0)">1(Never)</a></li>
+    <li data='2' data-src='8'><a href="javascript:void(0)">2</a></li>
+    <li data='3' data-src='8'><a href="javascript:void(0)">3</a></li>
+    <li data='4' data-src='8'><a href="javascript:void(0)">4</a></li>
+    <li data='5' data-src='8'><a href="javascript:void(0)">5(all the time)</a></li>
+  </ul>
+</div>
+<br>
+
+	<h3>Question 9</h3> 
+	<h5>How often do you keep your promises?</h5>
+	<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle col-lg-4" type="button" id="dropdownMenu9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret" id='q9'></span>
+  </button>
+  <ul class="dropdown-menu col-lg-4">
+    <li data='1' data-src='9'><a href="javascript:void(0)">1(when convenient)</a></li>
+    <li data='2' data-src='9'><a href="javascript:void(0)">2</a></li>
+    <li data='3' data-src='9'><a href="javascript:void(0)">3</a></li>
+    <li data='4' data-src='9'><a href="javascript:void(0)">4</a></li>
+    <li data='5' data-src='9'><a href="javascript:void(0)">5(my words are my bond)</a></li>
+  </ul>
+</div>	
+<br>
+
+	<h3>Question 10</h3> 
+	<h5>How would you rate your self-confidence?</h5>
+	<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle col-lg-4" type="button" id="dropdownMenu10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span class="caret" id='q10'></span>
+  </button>
+  <ul class="dropdown-menu col-lg-4" aria-labelledby="dropdownMenu1">
+    <li data='1' data-src='10'><a href="javascript:void(0)">1(below average)</a></li>
+    <li data='2' data-src='10'><a href="javascript:void(0)">2</a></li>
+    <li data='3' data-src='10'><a href="javascript:void(0)">3</a></li>
+    <li data='4' data-src='10'><a href="javascript:void(0)">4</a></li>
+    <li data='5' data-src='10'><a href="javascript:void(0)">5(very, very high)</a></li>
+  </ul>
+  <br>
+</div>
+<br><br>
+
+<button type="button" class="btn btn-primary btn-lg col-lg-12" id='submit'><span class="glyphicon glyphicon-search"></span> submit</button>
+<br>
+<hr>
+<a href='api/friends'>API Friends link</a> |
+<a href='https://github.com/stellawu734/FriendFinder'>Github Repo</a>	
+</div>
+
+<script>
+	$('li').on('click',function(){
+		var question = $(this).attr('data-src');
+		var value = $(this).attr('data');
+		var ID = 'q'+question;
+		document.getElementById(ID).innerHTML=value;
+	});
+	$('#submit').on('click',function(){
+		var userName = $('#userName').val().trim();
+		var photoLink = $('#photo').val().trim();
+		var scores = [parseInt($('#q1').text()),parseInt($('#q2').text()),parseInt($('#q3').text()),parseInt($('#q4').text()),parseInt($('#q5').text()),parseInt($('#q6').text()),parseInt($('#q7').text()),parseInt($('#q8').text()),parseInt($('#q9').text()),parseInt($('#q10').text())];
+		console.log(userName,photoLink,scores);
+		var total = 0;
+		for (var i = 0; i < scores.length; i++) {
+			total = total+scores[i];
+		}
+		console.log(total);
+	})
+</script>
+</body>
+</html>
