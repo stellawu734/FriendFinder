@@ -3,9 +3,10 @@
 // We are linking our routes to a series of "data" sources.
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 // ===============================================================================
-
+var fs = require('fs');
 var friendData 		= require('../data/friend.js');
 console.log(friendData.length+' friends founded!');
+
 
 // ===============================================================================
 // ROUTING
@@ -35,7 +36,6 @@ module.exports = function (app) {
 		// Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
 		// It will do this by sending out the value "true" have a table
 		console.log(req.body);
-		res.json(friendData);
 		//handle claculations too
 		var differences = [];
 		for (var i = 0; i < friendData.length; i++) {
@@ -48,9 +48,12 @@ module.exports = function (app) {
 		console.log(differences);
 		var match = Math.min.apply(Math, differences);
 		var index = differences.indexOf(match);
-		console.log('best match found: '+friendData[index].name);
+		var html = 'Best match found: ';
+		html = html+friendData[index].name;
+		var photo = friendData[index].photo;
 		friendData.push(req.body);
+		res.send({html: html, photo:photo});
 	});
 
-	
+
 };
